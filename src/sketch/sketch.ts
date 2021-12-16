@@ -45,6 +45,3 @@ function draw() {
     pop();
   }
 }
-
-// solves duplicate implementation ?
-// export {}
