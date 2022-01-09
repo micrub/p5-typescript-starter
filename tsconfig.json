@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "module": "none",
+    "module": "Esnext",
     "noImplicitAny": true,
-    "outFile": "./build/build.js",
+    // "outFile": "./build/build.js",
     "preserveConstEnums": true,
     "removeComments": true,
-    "rootDir": "./src/sketch/",
+    "rootDir": "./src/",
     "sourceMap": true,
     "target": "es5",
     "moduleResolution": "node"
-  }
+  },
 }

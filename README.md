@@ -15,19 +15,25 @@ This demo is based on the [Regular Polygon](https://p5js.org/examples/form-regul
 
 ### Installing
 
-```
+---
+```markdown
 git clone https://github.com/Gaweph/p5-typescript-starter.git
 ```
+---
 
-```
+---
+```markdown
 npm install
 ```
+---
 
 ### Using
 
-```
+---
+```markdown
 npm start
 ```
+---
 
 A local version will now be running on [localhost:3000](http://localhost:3000).
 
@@ -47,7 +53,8 @@ The following examples are both functionally the same.
 
 #### Global Mode
 
-```typescript
+---
+```ts
 let x = 100;
 let y = 100;
 
@@ -61,10 +68,12 @@ function draw() {
   rect(x, y, 50, 50);
 }
 ```
+---
 
 #### Instanced Mode
 
-```typescript
+---
+```ts
 var sketch = (p: p5) => {
   this.x = 100;
   this.y = 100;
@@ -81,6 +90,7 @@ var sketch = (p: p5) => {
 
 new p5(sketch);
 ```
+---
 
 This starter project will work with either mode, feel free to experiment with both.
 
@@ -92,25 +102,31 @@ To use an external library, e.g. [qrcode-generator](https://www.npmjs.com/packag
 
 2. Add a `script` tag to your [index.html](index.html).
 
-   ```html
+---
+```html
    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
-   ```
+```
+---
 
 3. Import via [global.d.ts](global.d.ts).
 
-   ```typescript
+---
+```ts
    import qrcode = require('qrcode-generator');
-   ```
+```
+---
 
 4. Use in [sketch/sketch.ts](sketch/sketch.ts).
 
-   ```typescript
+---
+```ts
    var qr = qrcode(4, 'L');
    qr.addData('https://github.com/Gaweph/p5-typescript-starter');
    qr.make();
 
    text(qr.createASCII(), 1, 1);
-   ```
+```
+---
 
 See [dblock/p5qr](https://github.com/dblock/p5qr) for a working sample.
 
